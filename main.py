@@ -23,3 +23,12 @@ with open("text_second.txt", 'r') as seven_words:
     print(f'Quantity words: {read}')
 print()
 print()
+
+#############################################################################
+#############################################################################
+print('*'*10, 'TASK 2', 10*'*')
+
+with open("text_first.txt", 'r') as quantity_words:
+    result = quantity_words.read()
+    search_word = re.findall(r'[A-Za-z]{2,}\s', result)
+    print(f'Quantity words in the text document "text_first.txt" is: {len(search_word)}')
